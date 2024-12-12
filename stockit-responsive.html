@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock It Inventory</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        nav {
+            background-color: #444;
+            color: white;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            padding: 1rem 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #00bcd4;
+        }
+        section {
+            padding: 2rem;
+        }
+        .hero {
+            background: url('hero.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 5rem 1rem;
+            animation: fadeIn 2s;
+        }
+        .services, .about, .testimonials, .contact {
+            max-width: 1200px;
+            margin: auto;
+            animation: slideIn 1.5s;
+        }
+        .testimonials {
+            background-color: #f9f9f9;
+            padding: 2rem;
+        }
+        .testimonials blockquote {
+            font-style: italic;
+            margin: 1rem 0;
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .contact label {
+            font-weight: bold;
+        }
+        .contact input, .contact textarea, .contact button {
+            width: 100%;
+            padding: 0.5rem;
+        }
+        .contact button {
+            background-color: #00bcd4;
+            color: white;
+            border: none;
+            transition: background-color 0.3s ease;
+        }
+        .contact button:hover {
+            background-color: #008c9e;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+            .hero {
+                padding: 3rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Stock It Inventory</h1>
+        <p>Your Reliable Partner in Efficient Inventory Management</p>
+    </header>
+
+    <nav>
+        <a href="#hero">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="hero" class="hero">
+        <h2>Welcome to Stock It Inventory</h2>
+        <p>Streamline your inventory management with ease and confidence.</p>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Stock It Inventory</h2>
+        <p>Stock It Inventory is a leading inventory management application designed to streamline stock management processes for businesses of all sizes. Committed to delivering top-notch inventory solutions, our app is tailored to meet the dynamic needs of modern-day businesses, ensuring they operate at peak efficiency.</p>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Our Services and Features</h2>
+        <ul>
+            <li><strong>Comprehensive Inventory Management:</strong> Easily manage and track your stock levels, purchases, sales, and daily profit with user-friendly features and robust functionalities.</li>
+            <li><strong>GST Management:</strong> The application supports the management of GST bills and parties, enhancing compliance with taxation norms.</li>
+            <li><strong>Multiple Platforms:</strong> Currently available on Android, with desktop and iOS versions under development.</li>
+            <li><strong>Backup and Security:</strong> Your data is securely stored in the cloud, ensuring accessibility and protection against data loss.</li>
+            <li><strong>Payment Solutions:</strong> We offer versatile payment methodologies including UPI, PhonePe, and Google Pay, ensuring seamless and secure transactions.</li>
+            <li><strong>Sales and Purchase Management:</strong> Efficiently handle sales returns, categorize items, and manage spare parts inventory for sectors like the 2-wheeler EV market.</li>
+            <li><strong>User-Friendly Interface:</strong> Intuitive design allows users to easily add products, create bills, edit transactions, and maintain comprehensive records.</li>
+            <li><strong>Customer Support:</strong> A dedicated support team is available through direct messaging within the app, equipped to resolve any issues, offer guidance, and receive feedback.</li>
+        </ul>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <h2>What Our Clients Say</h2>
+        <blockquote>"Stock It Inventory has revolutionized how we manage our inventory. Highly recommend!"</blockquote>
+        <cite>- Business Owner</cite>
+
+        <blockquote>"Exceptional features and great support. A must-have for any growing business."</blockquote>
+        <cite>- Satisfied Customer</cite>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+
+        <p>Phone: +1 (555) 123-4567</p>
+        <p>Email: support@stockitinventory.com</p>
+        <p>Address: 123 Business Ave, Commerce City, CC 12345</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Stock It Inventory. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+
